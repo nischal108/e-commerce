@@ -267,7 +267,7 @@ a{
   #product-img-day {
     width: 33vw;
     height: auto;
-    background-image: url("/assets/images/products/shampoo.jpg");
+    background-image: url("assets/images/products/shampoo.jpg");
     background-size: cover;
     background-position: center;
   }
