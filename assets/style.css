@@ -267,9 +267,11 @@ a{
   #product-img-day {
     width: 33vw;
     height: auto;
-    background-image: url("assets/images/products/shampoo.jpg");
-    background-size: cover;
-    background-position: center;
+  }
+  #product-img-day img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   
   
