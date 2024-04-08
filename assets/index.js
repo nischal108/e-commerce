@@ -108,9 +108,11 @@ endDate.setDate(endDate.getDate() + 4);
 
 function updateCountdown() {
     const now = new Date();
+
+
+   // the difference between these time stamps gives difference in miliseconds
     const timeDifference = endDate - now;
 
-    if (timeDifference > 0) {
         const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
@@ -120,14 +122,6 @@ function updateCountdown() {
         hoursSelected.textContent = hours;
         minutesSelected.textContent = minutes;
         secondsSelected.textContent = seconds;
-    } else {
-        // If the countdown has ended, display all zeros or some message
-        daysSelected.textContent = "0";
-        hoursSelected.textContent = "0";
-        minutesSelected.textContent = "0";
-        secondsSelected.textContent = "0";
-        clearInterval(timerInterval);
-    }
 }
 
 // Call updateCountdown every second
