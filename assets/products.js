@@ -240,4 +240,3 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/619pFqkAm0L._AC_SY500_.jpg"
       },
     ]
-  

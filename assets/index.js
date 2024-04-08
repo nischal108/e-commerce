@@ -13,7 +13,7 @@ headerTop.innerHTML = `
 // Inserting header bottom 
 const headerBottom = document.getElementById("header-bottom");
 headerBottom.innerHTML = `
-    <a href="/../index.html"><h3>Shopiji</h3></a>
+    <a href="https://nischal108.github.io/e-commerce/"><h3>Shopiji</h3></a>
     <div id="search">
         <input type="text" placeholder="search items ....">
         <i class="ri-search-2-line"></i>
