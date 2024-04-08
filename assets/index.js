@@ -91,3 +91,46 @@ function loadProducts() {
 
 // Call loadProducts function to populate product cards
 loadProducts();
+
+
+
+// set timer for the product of the day
+
+const daysSelected = document.getElementById("days");
+const hoursSelected = document.getElementById("hours");
+const minutesSelected = document.getElementById("minutes");
+const secondsSelected = document.getElementById("seconds");
+
+// Set the end date for the countdown
+const endDate = new Date();
+// Set the end date to 4 days ahead
+endDate.setDate(endDate.getDate() + 4); 
+
+function updateCountdown() {
+    const now = new Date();
+    const timeDifference = endDate - now;
+
+    if (timeDifference > 0) {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        daysSelected.textContent = days;
+        hoursSelected.textContent = hours;
+        minutesSelected.textContent = minutes;
+        secondsSelected.textContent = seconds;
+    } else {
+        // If the countdown has ended, display all zeros or some message
+        daysSelected.textContent = "0";
+        hoursSelected.textContent = "0";
+        minutesSelected.textContent = "0";
+        secondsSelected.textContent = "0";
+        clearInterval(timerInterval);
+    }
+}
+
+// Call updateCountdown every second
+const timerInterval = setInterval(updateCountdown, 1000);
+
+updateCountdown();
