@@ -177,6 +177,7 @@ a{
     -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -o-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-bottom: 2px solid transparent;
 }
 #categories-nav h4:hover{
     color: #111111;
@@ -269,6 +270,7 @@ a{
     width: -moz-fit-content;
     width: fit-content;
     cursor: pointer;
+    border-bottom: 2px solid transparent;
   }
   #category-list li:hover{
     color: #111111;
