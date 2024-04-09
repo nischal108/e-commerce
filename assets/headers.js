@@ -21,6 +21,6 @@ headerBottom.innerHTML = `
     <div id="menu-icons">
         <i class="ri-search-2-line"></i>
         <a href="assets/favourites-page/favourite.html"><i class="ri-heart-2-line"></i></a>
-        <a href=""><i class="ri-shopping-cart-fill"></i></a>
+        <a href="assets/cart-page/cart.html"><i class="ri-shopping-cart-fill"></i></a>
     </div>`;
 
