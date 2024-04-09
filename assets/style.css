@@ -725,3 +725,47 @@ footer {
 #copyright-msg a:hover {
     color: aquamarine;
 }
+
+
+/* //added to cart favourites */
+
+  #added-to-favourite {
+      position: fixed;
+      bottom: -50%; 
+      left: 50%; 
+      transform: translateX(-50%);
+      background-color: #f0cd67;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 9999; 
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* added to cart  */
+#added-to-cart {
+    position: fixed;
+    bottom: -50%; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999; 
+    font-family: Arial, sans-serif;
+    transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#added-to-cart h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+  
