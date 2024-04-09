@@ -1,5 +1,6 @@
 let products = [
       {
+        "ID":1,
         "category": "Fashion",
         "subcategory": "T-Shirt",
         "name": "Men's Casual T-Shirt",
@@ -12,6 +13,7 @@ let products = [
         "image2": "assets/images/products/bluevestback.jpg"
       },
       {
+        "ID":2,
         "category": "Footwear",
         "subcategory": "Sport",
         "name": "Women's Running Shoes",
@@ -24,6 +26,7 @@ let products = [
         "image2": "assets/images/products/womensportsshoes2.jpg"
       },
       {
+        "ID":3,
         "category": "Jewellery",
         "subcategory": "Necklace",
         "name": "Crystal Pendant Necklace",
@@ -36,6 +39,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/612W-hQWpaL._AC_SY575_.jpg"
       },
       {
+        "ID":4,
         "category": "Cosmetics",
         "subcategory": "Makeup Kit",
         "name": "Professional Makeup Kit",
@@ -48,6 +52,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/71v8LNy7gEL._AC_SX569_.jpg"
       },
       {
+        "ID":5,
         "category": "Fashion",
         "subcategory": "Dress & Frock",
         "name": "Women's Summer Dress",
@@ -60,6 +65,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/81OdFvmjYNL._AC_SY550_.jpg"
       },
       {
+        "ID":6,
         "category": "Footwear",
         "subcategory": "Casual",
         "name": "Men's Casual Loafers",
@@ -72,6 +78,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/81mUsvTZT0L._AC_SX575_.jpg"
       },
       {
+        "ID":7,
         "category": "Jewellery",
         "subcategory": "Earrings",
         "name": "Diamond Stud Earrings",
@@ -84,6 +91,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/61c7BFl-xnL._AC_SX522_.jpg"
       },
       {
+        "ID":8,
         "category": "Cosmetics",
         "subcategory": "Sunscreen",
         "name": "SPF 50+ Sunscreen Lotion",
@@ -96,6 +104,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/710XXe6Ud6L._AC_SX569_.jpg"
       },
       {
+        "ID":9,
         "category": "Fashion",
         "subcategory": "Shorts & Jeans",
         "name": "Men's Denim Jeans",
@@ -108,6 +117,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/81-XuC7jF9L._AC_SY550_.jpg"
       },
       {
+        "ID":10,
         "category": "Footwear",
         "subcategory": "Formal",
         "name": "Women's High Heel Pumps",
@@ -120,6 +130,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/51BDiueDESL._AC_SY575_.jpg"
       },
       {
+        "ID":11,
         "category": "Fashion",
         "subcategory": "Shirts",
         "name": "Men's Button-Up Shirt",
@@ -132,6 +143,7 @@ let products = [
         "image2": "https://slimages.macysassets.com/is/image/MCY/products/5/optimized/19383145_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1&fmt=webp"
       },
       {
+        "ID":12,
         "category": "Footwear",
         "subcategory": "Boots",
         "name": "Women's Ankle Boots",
@@ -144,6 +156,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/61rC+F-VgDL._AC_SY500_.jpg"
       },
       {
+        "ID":13,
         "category": "Jewellery",
         "subcategory": "Pendants",
         "name": "Gold Heart Pendant Necklace",
@@ -156,6 +169,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/81vlA1O4XZL._AC_SY500_.jpg"
       },
       {
+        "ID":14,
         "category": "Cosmetics",
         "subcategory": "Hair Colors",
         "name": "Temporary Hair Color Spray",
@@ -168,6 +182,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/810dPUOyb6L._SX569_.jpg"
       },
       {
+        "ID":15,
         "category": "Fashion",
         "subcategory": "Jacket",
         "name": "Women's Leather Jacket",
@@ -180,6 +195,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/61ZSWRajAnL._AC_SX522_.jpg"
       },
       {
+        "ID":16,
         "category": "Footwear",
         "subcategory": "Party Wear Shoes",
         "name": "Men's Formal Party Shoes",
@@ -192,6 +208,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/71xLBdaRkfL._AC_SX500_.jpg"
       },
       {
+        "ID":17,
         "category": "Jewellery",
         "subcategory": "Bracelets",
         "name": "Silver Cuff Bracelet",
@@ -204,6 +221,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/41kxDED-KYL._AC_.jpg"
       },
       {
+        "ID":18,
         "category": "Cosmetics",
         "subcategory": "Bodywash",
         "name": "Luxury Body Wash",
@@ -216,6 +234,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/615fPBxCpML._SX569_.jpg"
       },
       {
+        "ID":19,
         "category": "Fashion",
         "subcategory": "Innerwear",
         "name": "Women's Lace Bralette",
@@ -228,6 +247,7 @@ let products = [
         "image2": "https://m.media-amazon.com/images/I/81KsiN9+OCL._AC_SX522_.jpg"
       },
       {
+        "ID":20,
         "category": "Footwear",
         "subcategory": "Long Shoes",
         "name": "Men's Formal Long Shoes",

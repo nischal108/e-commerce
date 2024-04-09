@@ -10,6 +10,10 @@ function loadProducts() {
         const productImage = document.createElement("div");
         productImage.classList.add("product-image");
 
+        const productID = document.createElement("div");
+        productID.classList.add("getID");
+        productID.textContent = `${product.ID}`
+        containerWished.appendChild(productCard);
         const mainImage = document.createElement("img");
         mainImage.src = product.image1;
         mainImage.alt = "Product Image 1";
@@ -69,6 +73,7 @@ function loadProducts() {
         productInfo.appendChild(productPrice);
 
         productCard.appendChild(productImage);
+        productCard.appendChild(productID);
         productCard.appendChild(productInfo);
 
         productsContainer.appendChild(productCard);

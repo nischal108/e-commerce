@@ -6,16 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
     wishlistButtons.forEach((element) => {
         element.addEventListener("click", (e) => {
             let wishedProduct = e.target.parentNode.closest(".product-card");
-            wishlistProducts.push(wishedProduct);
+            let wishedProductID = wishedProduct.querySelector(".getID").textContent;
+            console.log(wishedProductID);
+            wishlistProducts.push(wishedProductID); 
             console.log("pushed");
-            console.log(wishlistProducts);
-            // Save wishlistProducts to localStorage
             localStorage.setItem('wishlist', JSON.stringify(wishlistProducts));
         });
     });
 });
 
-// Export wishlistProducts as an object with a property
+
 export const wishlistData = {
-    products: wishlistProducts
+    get products() {
+        return wishlistProducts;
+    }
 };

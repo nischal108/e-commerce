@@ -514,6 +514,9 @@ a{
     opacity: 0;
 }
 
+.getID{
+    display: none;
+}
 .product-image:hover img.hover-image {
     opacity: 1;
 }
