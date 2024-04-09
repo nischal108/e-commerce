@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         element.addEventListener("click", (e) => {
             let wishedProduct = e.target.parentNode.closest(".product-card");
             wishlistProducts.push(wishedProduct);
+            console.log("pushed");
+            console.log(wishlistProducts);
             // Save wishlistProducts to localStorage
             localStorage.setItem('wishlist', JSON.stringify(wishlistProducts));
         });
