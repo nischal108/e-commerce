@@ -1,3 +1,4 @@
+
 /* Boiler plate */
 * {
     -webkit-box-sizing: border-box;
@@ -372,4 +373,59 @@ main {
 
 #checkout-button:hover {
     background-color: #45a049; /* Darker Green */
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: scroll;
+    }
+
+    main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0;
+        gap: 8vw;
+    }
+
+    #products-display {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    #checkout-area {
+        width: 100%;
+    }
+
+    #products-area {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .details-box {
+        width: 100px;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .img-box {
+        width: 50%;
+    }
+
+    /* New styles for the delete product button */
+    .delete-product {
+        cursor: pointer;
+        color: red;
+        margin-top: 10px;
+    }
+
+    .delete-product:hover {
+        color: darkred;
+    }
 }
