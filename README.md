@@ -5,6 +5,9 @@ The website is built using HTML, CSS, and Vanilla JavaScript, aimed at sharpenin
 
 ## Features
 
+## Demo:
+link: https://nischal108.github.io/e-commerce/
+
 - Display of fashion and beauty products.
 - Product categories include Fashion, Footwear, Jewellery, Cosmetics, etc.
 - Product details include name, description, original price, selling price, brand, and rating.
