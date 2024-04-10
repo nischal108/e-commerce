@@ -9,8 +9,8 @@ let products = [
         "selling_price": 19.99,
         "rating": 4.5,
         "brand": "XYZ Fashion",
-        "image1": "assets/images/products/bluevestfront.jpg",
-        "image2": "assets/images/products/bluevestback.jpg"
+        "image1": "https://github.com/nischal108/e-commerce/blob/main/assets/images/products/bluevestfront.jpg?raw=true",
+        "image2": "https://github.com/nischal108/e-commerce/blob/main/assets/images/products/bluevestback.jpg?raw=true"
       },
       {
         "ID":2,
@@ -22,8 +22,8 @@ let products = [
         "selling_price": 39.99,
         "rating": 4.8,
         "brand": "ABC Sports",
-        "image1": "assets/images/products/womensportsshoes1.jpg",
-        "image2": "assets/images/products/womensportsshoes2.jpg"
+        "image1": "https://github.com/nischal108/e-commerce/blob/main/assets/images/products/womensportsshoes1.jpg?raw=true",
+        "image2": "https://github.com/nischal108/e-commerce/blob/main/assets/images/products/womensportsshoes2.jpg?raw=true"
       },
       {
         "ID":3,

@@ -1,6 +1,7 @@
 /* Boiler plate */
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -18,22 +19,35 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+#search{
+    display: none;
+}
 
 main {
     overflow: hidden;
     margin: 3vw 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1vw;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #products-display{
     padding: 20px;
     width: 65%;
     max-height: 75vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #product-count{
@@ -47,6 +61,8 @@ main {
 }
 
 #product-headings-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0.5vw;
     border-bottom: 1px solid var(--lines);
@@ -55,9 +71,15 @@ main {
 
 #product-headings-section ul{
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 #product-headings-section li{
     list-style: none;
@@ -75,8 +97,13 @@ main {
 #checkout-area{
     padding: 2vw 3vw;
     width: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 2vw;
     background-color:#eee;
 }
@@ -88,17 +115,27 @@ main {
 
  /* products-cards -  */
  .cart-item-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border-bottom: 1px solid #ccc;
     padding: 0.5vw;
 }
 
 .details-box {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .img-box {
@@ -111,21 +148,33 @@ main {
 .img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .details-of-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 5px;
 }
 .details-of-product h5{
     color: #888;
     cursor: pointer;
     border-bottom: 1px solid transparent; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .details-of-product h5:hover{
     color: #333;
@@ -144,14 +193,24 @@ main {
 }
 .number-details{
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .quantity {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .quantity i {
@@ -175,7 +234,8 @@ main {
     width: 40px;
     text-align: center;
     -moz-appearance: textfield; 
-    appearance: textfield;
+    -webkit-appearance: textfield; 
+            appearance: textfield;
     padding: 4px 2px; 
 }
 
@@ -187,7 +247,24 @@ main {
 }
 
 
-
+.no-products{
+    min-height: 90vh;
+    background-color: #333;
+    border-radius: 16px;
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
 
 
@@ -200,15 +277,23 @@ main {
 
 
 #products-calc{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 2vw;
     border-bottom: 1px solid var(--lines);
 }
 
 #shipping-costs{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 2vw;
     border-bottom: 1px solid var(--lines);
 }
@@ -223,6 +308,9 @@ main {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 15px;
+}
+.IDProduct{
+    display: none;
 }
 
 #promo-code input[type="text"] {
@@ -250,9 +338,15 @@ main {
 
 #final-cost{
     padding-bottom: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 #final-cost h2{
     font-size: 1rem;
@@ -271,10 +365,11 @@ main {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 }
 
 #checkout-button:hover {
     background-color: #45a049; /* Darker Green */
 }
-

@@ -1,16 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 /* Boiler plate */
 * {
@@ -733,17 +721,28 @@ footer {
       position: fixed;
       bottom: -50%; 
       left: 50%; 
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%); 
+          -ms-transform: translateX(-50%); 
+              transform: translateX(-50%);
       background-color: #f0cd67;
       border: 1px solid #ccc;
       padding: 10px 20px;
       border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       z-index: 9999; 
       font-family: Arial, sans-serif;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -o-transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -752,14 +751,19 @@ footer {
     position: fixed;
     bottom: -50%; 
     left: 50%; 
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%); 
+        -ms-transform: translateX(-50%); 
+            transform: translateX(-50%);
     background-color: #4CAF50; /* Green */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 9999; 
     font-family: Arial, sans-serif;
+    -webkit-transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
