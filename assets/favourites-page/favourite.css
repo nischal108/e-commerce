@@ -31,3 +31,51 @@ html, body {
         justify-content: space-around;
     margin-top: 1vw;
 }
+
+
+/* added to cart  */
+#added-to-cart {
+    position: fixed;
+    bottom: -50%; 
+    left: 50%; 
+    -webkit-transform: translateX(-50%); 
+        -ms-transform: translateX(-50%); 
+            transform: translateX(-50%);
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999; 
+    font-family: Arial, sans-serif;
+    -webkit-transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#added-to-cart h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+.no-products{
+    min-height: 90vh;
+    background-color: #333;
+    border-radius: 16px;
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

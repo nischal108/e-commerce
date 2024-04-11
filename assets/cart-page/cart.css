@@ -429,3 +429,10 @@ main {
         color: darkred;
     }
 }
+
+.promo-discount {
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}

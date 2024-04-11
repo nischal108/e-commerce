@@ -13,6 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let wishlistProducts = wishlistData.products || {}; 
 
 
+    function checkIfEmpty() {
+        if(wishlistProducts.length==0){
+            const errorMessage = document.createElement('div');
+            errorMessage.classList.add('no-products');
+            errorMessage.textContent = 'You have no products in the wishlist , Please see and add the products from the homepage to the wishlist';
+            const main = document.querySelector('main');
+            const fullcontainer = document.querySelector('#container-full');
+            main.style.display ="none";
+            fullcontainer.appendChild(errorMessage);
+            
+        }
+    }
+    checkIfEmpty()
+
     wishlistProducts.forEach((wishProductID) => {
         wishProductID = parseInt(wishProductID)
         loadProducts(wishProductID);
@@ -114,6 +128,7 @@ deleteButtons.forEach((element) => {
         localStorage.setItem('wishlist', JSON.stringify(wishlistProducts));
         
         touchedProduct.remove();
+        checkIfEmpty()
     });
 });
 });

@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTotalCost();
 
     // Event listener for applying promo code
+    const promoInput = document.getElementById("promo");
     const applyPromoButton = document.getElementById("apply-promo");
     applyPromoButton.addEventListener("click", function() {
         const promoCode = promoInput.value.trim();
@@ -207,12 +208,17 @@ function updateTotalCost() {
 
 // Apply promo code function
 function applyPromoCode(promoCode) {
-    if (promoCode === "NISCHAL") {
+    if (promoCode == "NISCHAL") {
         // Apply 30% discount
+        console.log("heeelo");
         const productPrice = calculateProductTotal();
         const discountedPrice = productPrice * 0.7;
         const totalPrice = discountedPrice + shippingCost;
-        productTotalElement.textContent = "Rs " + discountedPrice.toFixed(2);
+        const promobox = document.getElementById("promo-code");
+         const promoEvent = document.createElement("p");
+         promoEvent.classList.add('promo-discount');
+         promoEvent.textContent=`${discountedPrice} was discounted for the promocode`;
+         promobox.appendChild(promoEvent);
         finalCostElement.textContent = "Rs " + totalPrice.toFixed(2);
     } else {
         alert("Invalid promo code");
